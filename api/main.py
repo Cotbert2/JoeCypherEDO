@@ -1,6 +1,5 @@
 from flask import Flask,request, jsonify
 import cypher2
-import cypher
 app = Flask(__name__)
 
 def joeCypher(data):
