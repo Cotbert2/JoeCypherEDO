@@ -7,14 +7,14 @@ def joeCypher(data):
 
     if data['method'] == 'cypher':
         M = data['M']
-        cypherProcces = cypher2.JoeCypher(M)
-        return cypherProcces.cipher_text
+        cypherProcces = cypher2.JoeCypher()
+        return cypherProcces.cypher(M)
 
     elif data['method'] == 'decypher':
         M = data['M']
         x = data['x']
         cypher_message = data['cypher_message']
-        cypherProcces = cypher2.JoeCypher(M)
+        cypherProcces = cypher2.JoeCypher()
         return cypherProcces.decypher(x, cypher_message)
 
 
