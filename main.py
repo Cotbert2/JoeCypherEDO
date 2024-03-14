@@ -1,6 +1,6 @@
 import lorenz
-
 import extractDigits
+
 p = 99991
 g = 6
 # Clave privada para A
@@ -12,13 +12,13 @@ public_key = (p, g, y)
 print("Public key: ", public_key)
 
 #Encriptacion
-M = 200
+M = 3000
 k = 10
 a = (g**k) % p
 b = ((y**k) * M )% p
 
 
-myLorenz = lorenz.Lorenz(3)
+myLorenz = lorenz.Lorenz(x)
 myLorenz.draw_attractor()
 print(f"b: {b}")
 
@@ -29,9 +29,9 @@ b += myLorenz.getPosition("x", extractDigits.extractDigits(a))
 cipher_text = (a, b)
 print("Cipher text: ", cipher_text)
 
+
+
 #Desencriptacion
-
-
 a__1, b__1 = cipher_text
 a_1 =int(a__1 - myLorenz.getPosition("y", extractDigits.extractDigits(b__1)))
 b_1= int(b__1 -myLorenz.getPosition("x", extractDigits.extractDigits(a__1)))

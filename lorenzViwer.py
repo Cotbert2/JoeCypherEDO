@@ -14,7 +14,7 @@ def lorenz(t, xyz, sigma, rho, beta):
 # Parámetros de las ecuaciones de Lorenz
 sigma = 10.0
 rho = 28.0
-beta = 10
+beta = 5
 
 # Condiciones iniciales
 x0, y0, z0 = 0.1, 0.0, 0.0
