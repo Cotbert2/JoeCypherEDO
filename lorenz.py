@@ -20,7 +20,7 @@ class Lorenz:
         dydt = x * (self.rho - z) - y
         dzdt = x * y - self.beta * z
         return [dxdt, dydt, dzdt]
-    
+
 
     def solve_lorenz(self):
         sol = solve_ivp(self.lorenzBuilder, self.t_span, self.xyz0,  t_eval=self.t_eval)
