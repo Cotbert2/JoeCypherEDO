@@ -25,3 +25,12 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Scripts
+
+1. lorenzAtractorViewer.py: 
+Script to visualize the Lorenz' Atractor in 3D; you can change initial conditions and parameters to see the behavior of the system.
+
+![Lorenz' Atractor](./presentation/lorenz.png)
+
+
+

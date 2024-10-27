@@ -3,7 +3,7 @@ import extractDigits
 
 p = 99991
 g = 6
-# Clave privada para A
+# Private ket for A
 x = 35
 y = (g**x) % p
 
@@ -11,7 +11,7 @@ y = (g**x) % p
 public_key = (p, g, y)
 print("Public key: ", public_key)
 
-#Encriptacion
+
 M = 3000
 k = 10
 a = (g**k) % p
