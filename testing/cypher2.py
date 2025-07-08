@@ -26,13 +26,13 @@ class JoeCypher:
         self.myLorenz.solve_lorenz()
         print(f"b: {b}")
 
-        # a += self.myLorenz.getPosition("y", extractDigits.extractDigits(b))
-        # b += self.myLorenz.getPosition("x", extractDigits.extractDigits(a))
+        a += self.myLorenz.getPosition("y", extractDigits.extractDigits(b))
+        b += self.myLorenz.getPosition("x", extractDigits.extractDigits(a))
         self.cipher_text = (a, b)
         print("Cipher text: ", self.cipher_text)
         return self.cipher_text
 
-    def decypher(self, cypher_message):
+    def decypher(self, x, cypher_message):
         #Desencriptacion
         self.myLorenz = lorenz.Lorenz(self.x)
 

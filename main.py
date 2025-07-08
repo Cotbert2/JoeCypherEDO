@@ -12,7 +12,7 @@ public_key = (p, g, y)
 print("Public key: ", public_key)
 
 
-M = 3000
+M = 15
 k = 10
 a = (g**k) % p
 b = ((y**k) * M )% p
